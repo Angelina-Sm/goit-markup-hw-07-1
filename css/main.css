@@ -473,45 +473,48 @@ img {
   padding-top: 94px;
 }
 
-.advantages-vector {
+.icon-list__vector {
   Width: 270px;
   Height: 120px;
   background-color: var(--btn-background);
   border-radius: 4px;
-  margin-bottom: 30px;
   padding: 25px auto;
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.advantages-vector + .advantages-vector {
+.icon-list__vector + .icon-list__vector {
   margin-left: 30px;
 }
 
-.advantages-vector-list {
+.item_vector {
+  margin-bottom: 30px;
+}
+
+.icon-list {
   display: flex;
 }
 
-.advantages-list {
-  display: flex;
+.icon-list__item + .icon-list__item {
+  margin-left: 30px;
 }
 
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.advantages-subtitle {
+.icon-list__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--subtitle);
-  margin-bottom: 10px;
   max-width: 270px;
 }
 
-.advantages-description {
+.subtitle__item {
+  margin-bottom: 10px;
+}
+
+.icon-list__description {
+  font-weight: nul;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -668,25 +671,31 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
   color: var(--heading);
 }
 
-.clients-list {
+.clients__permanent {
+  margin-bottom: 50px;
+}
+
+.scroll {
   display: flex;
+}
+
+.clients-scroll {
   margin-left: auto;
 }
 
-.clients-item {
+.scroll__item {
   width: 170px;
   height: 92px;
   box-sizing: border-box;
 }
-.clients-item + .clients-item {
+.scroll__item + .scroll__item {
   margin-left: 30px;
 }
 
-.clients-link {
+.scroll__link {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -697,15 +706,15 @@ img {
   border: 1px solid #AFB1B8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover, .clients-link:focus {
+.scroll__link:hover, .scroll__link:focus {
   border-color: var(--akcent-color);
 }
 
-.clients-logo {
+.scroll__logo {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover .clients-logo, .clients-link:focus .clients-logo {
+.scroll__link:hover .scroll__logo, .scroll__link:focus .scroll__logo {
   fill: var(--akcent-color);
 }
 
